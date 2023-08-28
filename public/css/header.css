@@ -1,0 +1,151 @@
+header{
+    width: 100%;
+    box-shadow: 2px 2px 4px black;
+    background-color: #040404;
+}
+header .etiquetaa{
+    text-decoration: none;
+    color:var(--colorBlanco) ;
+}
+
+header .content-header{
+    width: 980%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem 0;
+}
+
+header .content-header .logo{
+    width: 100%;
+}
+    header .content-header .burger{
+    background-color: var(--colorBlanco);
+    color: var(--colorVerdeOscuro);
+    padding:1rem;
+    border-radius: 5px;
+
+}
+
+header .content-header .burger i{
+    font-size: 2rem;
+}
+
+header .content-header .logo{
+    width: 100px;
+    height: 70px;
+}
+
+header .content-header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*boton*/
+header .content-header .boton-wallet {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: 1%;
+}
+
+
+.header .content-header .boton-wallet .botona:hover::after{
+    background-position: 100%;
+    filter: blur(15px);
+}
+.header .content-header .boton-wallet .botona::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, yellow, gold, rgb(255, 255, 255), rgb(255, 255, 255), gold, yellow);
+    background-size: 300%;
+    border-radius: 5px;
+    z-index: -1;
+}
+.header .content-header .boton-wallet .botona:hover::before{
+    background-position: 100%;
+}
+ .botona{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+    text-shadow: 2px 1px 3px #000000ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px ;
+}
+
+
+header .top{
+    display: flex;
+    justify-content:space-around;
+    justify-content: flex-start;
+}
+
+
+
+header .content-header .icons{
+    font-size: 2rem;
+    display: flex;
+}
+header .content-header .icons li{
+    padding: .8rem;
+}
+
+
+header .content-header .nav-desktop{
+    display: none;
+}
+
+
+
+
+@media(min-width:769px){
+    header .content-header{
+        flex-wrap: wrap;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    header .content-header .burger{
+        display: none;
+    }
+    header .content-header .nav-desktop{
+        display: block;
+        width: 60%;
+    }
+    header .content-header .nav-desktop ul{
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 1px #9f9c2e;
+    }
+
+
+    header .content-header .nav-desktop ul li {
+        padding: 1rem 0;
+        width: 20%;
+        text-align: center;
+        font-size: 14px;
+    }
+    header .content-header .nav-desktop ul li:hover{
+        background-color: #9f9c2e;
+    }
+    header .content-header .nav-desktop ul li:hover a{
+        color:var(--colorBlanco)
+    }
+}
+

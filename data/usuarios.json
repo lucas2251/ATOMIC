@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cristian",
+        "apellido": "Elias",
+        "email": "cristiannicolas32@hotmail.com",
+        "clave": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "admin",
+        "imagen": "image"
+    },
+    {
+        "id": 2,
+        "nombre": "Jeaneth",
+        "apellido": "Barrera",
+        "email": "jeanette.barrera0710@gmail.com",
+        "clave": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "admin",
+        "imagen": "avatar-porDefecto.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Lucas",
+        "apellido": "Cordoba",
+        "email": "lucas@gmail.com",
+        "clave": "$2a$12$vynUDc9RyCc35a9wuAX7Yuwvc5xxA/Eq9GVJ1cXV5KGM4WdhcMb7K",
+        "rol": "admin",
+        "imagen": "avatar-porDefecto.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Yesica",
+        "apellido": "Fiorentino",
+        "email": "jesicafiore1@gmail.com",
+        "contraseña": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "usuario",
+        "imagen": "image"
+    },
+    {
+        "id": 5,
+        "nombre": "Emiliano",
+        "apellido": "Amarante",
+        "email": "emiliano198218@gmail.com",
+        "clave": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "usuario",
+        "imagen": "image"
+    },
+    {
+        "id": 7,
+        "nombre": "Juan",
+        "apellido": "Carlos",
+        "email": "Juan@gmail.com",
+        "clave": "$2a$12$gjuDLr926wXWR0xuUwQKdOvGvKhPr.ZNKo3YoOPsiMWj4BFTrm5yK",
+        "imagen": "avatar-1664246322110.jpg",
+        "rol": "usuario"
+    },
+    {
+        "id": 8,
+        "nombre": "joel",
+        "apellido": "cordoba",
+        "email": "joel@gmail.com",
+        "clave": "$2a$12$gKm8oCkJaCC/fr4btDPOeeX.N5d7TVY2BYSYH3CsNwaTLwoU0hzGa",
+        "imagen": "avatar-1664246494302.jpg",
+        "rol": "usuario"
+    }
+]
