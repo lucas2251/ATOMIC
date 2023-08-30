@@ -2,6 +2,8 @@ header{
     width: 100%;
     box-shadow: 2px 2px 4px black;
     background-color: #040404;
+    position: fixed;
+    z-index: 3;
 }
 header .etiquetaa{
     text-decoration: none;
