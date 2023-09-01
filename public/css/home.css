@@ -7,7 +7,7 @@ background-image: url("/images/fondo-atomicc.png");
 background-repeat: no-repeat;
 background-size: 80%;
 background-position-x: 100%;
-background-position-y: -45%;
+
 }
 .home img{
     width: 100%;
@@ -26,6 +26,7 @@ background-position-y: -45%;
 .home main .section-1 h1{
     margin: 1% 0;
     font-size: 314%;
+   
 }
 .home main .section-1 h3{
     color: #fffffff2;
@@ -81,13 +82,25 @@ background-position-y: -45%;
     flex-direction: row;
      color: white;
      justify-content: space-around;
-     padding-top: 30%;
+     padding-top: 20%;
      padding-bottom: 22%;
 }
-.homemain .section-2 .estrategias{
-
+.home main .section-2 .estrategias .h1-estrategias{
+    text-shadow: 1px 2px black;
+}
+.h1-estrategias{
+    text-shadow: 1px 2px black;
+   text-align: center;
+}
+.home main .section-2 div h4{
+    text-shadow: 1px 2px black;
+    text-align: center;
 }
 
+
+.home main .section-2 .estrategias:hover {
+    
+}
 
 /* Tablet */
 
@@ -111,9 +124,24 @@ background-position-y: -45%;
 
    .home main .section-1 h3{
     font-size: 18px;
-   }}
+   }
+   .h1-estrategias{
+    text-shadow: 1px 2px black;
+    font-size: 36px;
+}
+       .home main .section-2 div h4{
+    font-size: 16px;
+}
+.home main .section-2{
+    padding-top: 16%;
+}
+
+}
 
    @media (min-width: 1500px){
+    .home main{
+        
+       }
     .home main .section-1 h2{
      font-size: 55px;
     }
@@ -124,13 +152,13 @@ background-position-y: -45%;
     .home main .section-1 h3{
      font-size: 26px;
     }
-
-    @media (min-width: 1500px){
-   .home main{
-    background-position-y: -25%;
-   }
-
+    .h1-estrategias{
+        font-size: 55px;
     }
-
+           .home main .section-2 div h4{
+        font-size: 24px;
+    }
+    
+    
 
 }

@@ -133,7 +133,7 @@ header .content-header .nav-desktop{
     header .content-header .nav-desktop ul{
         display: flex;
         justify-content: space-between;
-        border-top: solid 1px #9f9c2e;
+        border-top: solid 1px yellow;
     }
 
 
@@ -144,10 +144,10 @@ header .content-header .nav-desktop{
         font-size: 14px;
     }
     header .content-header .nav-desktop ul li:hover{
-        background-color: #9f9c2e;
+        background-color: yellow;
     }
     header .content-header .nav-desktop ul li:hover a{
-        color:var(--colorBlanco)
+        color:black
     }
 }
 
