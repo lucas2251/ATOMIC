@@ -49,11 +49,33 @@
             
         </section>
         <section class="section-3">
+            
+            <div class="glider-contain">
+                <div class="glider">
+                  <div><img src="/images/glider-1.jpg" alt=""></div>
+                  <div><img src="/images/glider-2.jpg" alt="Casa 1"></div>
+                  <div><img src="/images/glider-3.jpg" alt="Reci"></div>
+                  <div><img src="/images/glider-4.jpg" alt="Casa 2"></div>
+                </div>
+              
+                <button aria-label="Previous" class="glider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button aria-label="Next" class="glider-next"><i class="fas fa-chevron-right"></i></button>
+                <div role="tablist" class="dots"></div>
+              </div>
+
+                <button aria-label="Previous" class="glider-prev disabled" aria-disabled="true"><i
+                        class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button aria-label="Next" class="glider-next" aria-disabled="false"><i
+                        class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                <div role="tablist" class="dots"></div>
+            </div>
+
 
         </section>
 
 </main>
 <%- include('./partials/footer') %> 
+<script src="/javascript/glider.js"></script>
     
 </body>
 

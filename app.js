@@ -20,8 +20,7 @@ app.use(express.urlencoded({extended: false}));
 /* Requerir las rutas */
 const indexRouter = require('./routes/index')
 
-const usuariosRouter = require('./routes/usuarios')
-const administradorRouter = require('./routes/administrador')
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -42,7 +41,7 @@ app.use(methodOverride('_method'))
 
 /* Rutas */
 app.use('/', indexRouter);
-app.use('/usuarios', usuariosRouter);
 
-app.use('/administrador',administradorRouter);
+
+
 app.listen(port,() => console.log(`Servidor corriendo en http://localhost:${port}`));

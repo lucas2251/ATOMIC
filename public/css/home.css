@@ -111,6 +111,208 @@ background-position-x: 100%;
 /* Desktop */
 
 @media (min-width: 769px){
+    /*glider*/
+
+   .glider-contain {
+    width: 96%;
+    height: 400px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .home main .section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ .glider-contain img{
+    width: 100%;
+    height: 400px;
+}
+.glider-contain {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: black;
+    width: 90%;
+  }
+  
+  .glider-contain-marcas{
+    width: 100vw;
+    height: 60vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .glider {
+    margin: 0 auto;
+    position: relative;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    transform: translateZ(0);
+  }
+  .glider-marcas{
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+   /*  overflow-y: hidden; */
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    transform: translateZ(0);
+  }
+  
+  .glider-contain-marcas .glider-marcas .brand{
+    display: flex;
+    width: 300px;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 6px solid black;
+    box-shadow: 0 0 15px rgb(0 0 0 / 95%);
+    border-radius: 5%;
+  }
+  .glider-contain-marcas .glider-marcas .brand img{
+    width: 200px;
+  }
+  
+  .glider-track {
+    transform: translateZ(0);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1;
+  }
+  .glider.draggable {
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab;
+    border: 5px solid black;
+    border-radius: 15px;
+  }
+  .glider.draggable .glider-slide img {
+    user-select: none;
+    pointer-events: none;
+    width: 90%;
+  }
+  .glider.drag {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  .glider-slide {
+    user-select: none;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .glider-slide img {
+    width: 100vw;
+    height: 350px;
+  }
+  
+  .glider-slide video {
+    width: 100vw;
+    height: 350px;
+  }
+  
+  .glider::-webkit-scrollbar {
+    opacity: 0;
+    height: 0;
+  }
+  .glider-prev,.glider-next {
+    user-select: none;
+    position: absolute;
+    outline: none;
+    background: none;
+    padding: 0;
+    z-index: 2;
+    font-size: 50px;
+    text-decoration: none;
+    left: 15px;
+    border: 0;
+    top: 35%;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    opacity: 1;
+    line-height: 1;
+    transition: opacity .5s cubic-bezier(.17,.67,.83,.67),
+                color .5s cubic-bezier(.17,.67,.83,.67);
+  }
+  .glider-prev:hover,
+  .glider-next:hover,
+  .glider-prev:focus,
+  .glider-next:focus {
+    color: #801fa6;
+  }
+  .glider-next {
+    right: 20px;
+    left: auto;
+  }
+  .glider-next.disabled,
+  .glider-prev.disabled {
+    opacity: .25;
+    color: rgba(12, 12, 12, 0.96);
+    cursor: default;
+  }
+  /* .glider-slide {
+    min-width: 150px;
+  } */
+  .glider-hide {
+    opacity: 0;
+  }
+  .glider-dots {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .glider-dot {
+    border: 0;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    color: #ccc;
+    border-radius: 999px;
+    background: #ccc;
+    width: 12px;
+    height: 12px;
+    margin: 7px;
+  }
+  .glider-dot:hover,
+  .glider-dot:focus,
+  .glider-dot.active {
+    background: #a89cc8;
+  }
+  @media(max-width: 36em){
+    .glider::-webkit-scrollbar {
+      opacity: 1;
+      width: 7px;
+      height: 3px;
+    }
+    .glider::-webkit-scrollbar-thumb {
+      opacity: 1;
+      border-radius: 99px;
+      background-color: rgba(156, 156, 156, 0.25);
+      box-shadow: 0 0 1px rgba(255,255,255,.25);
+    }
+
+
+
+}
    
 
 }
@@ -136,6 +338,9 @@ background-position-x: 100%;
     padding-top: 16%;
 }
 
+
+
+
 }
 
    @media (min-width: 1500px){
@@ -158,7 +363,4 @@ background-position-x: 100%;
            .home main .section-2 div h4{
         font-size: 24px;
     }
-    
-    
-
-}
+    }

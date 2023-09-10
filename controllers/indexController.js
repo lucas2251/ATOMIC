@@ -13,10 +13,13 @@ module.exports = {
          })
         return res.render('inicio',{productos,indexProductos,indexProductos2})
     },
-    about: (req,res) => {
-        return res.render('about')
+    beneficios: (req,res) => {
+        return res.render('beneficios')
     },
     contacto: (req,res) => {
         return res.render('contacto')
+    },
+    planes: (req,res) => {
+        return res.render('planes')
     }
 }
