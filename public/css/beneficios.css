@@ -1,8 +1,40 @@
-.beneficios img{
-    width: 100%;
-    padding-top: 10%;
-}
+
 .beneficios{
     background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15%;
+    justify-content: space-around;
+}
+.beneficios .imagen-bit  {
+    width: 40%;
 }
 
+.beneficios .imagen-bit .bitcoin {
+    width: 100%;
+    padding-top: 15%;
+}
+.beneficios .parrafos .parrafo-1 h1{
+color: white;
+margin: 1% 0;
+font-size: 314%;
+}
+.beneficios .parrafos .parrafo-1 h3{
+    color: #ffffffc7;
+    font-weight: lighter;
+    font-size: 140%;
+    }
+.beneficios .parrafos .parrafo-2 h1{
+color: white;
+margin: 1% 0;
+font-size: 314%;
+}
+.beneficios .parrafos .parrafo-2 h3{
+    color: #ffffffc7;
+    font-weight: lighter;
+    font-size: 140%;
+    }
+.beneficios .parrafos .parrafo-2{
+       padding-top: 5%;
+}
+    
