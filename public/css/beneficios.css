@@ -18,6 +18,7 @@
 color: white;
 margin: 1% 0;
 font-size: 314%;
+font-family: 'Montserrat', sans-serif;
 }
 .beneficios .parrafos .parrafo-1 h3{
     color: #ffffffc7;
@@ -28,6 +29,7 @@ font-size: 314%;
 color: white;
 margin: 1% 0;
 font-size: 314%;
+font-family: 'Montserrat', sans-serif;
 }
 .beneficios .parrafos .parrafo-2 h3{
     color: #ffffffc7;
@@ -37,4 +39,59 @@ font-size: 314%;
 .beneficios .parrafos .parrafo-2{
        padding-top: 5%;
 }
+  
+@media (min-width: 1000px){
+    .beneficios{
+        padding-top: 12%;
+    }
+
+    .beneficios .imagen-bit  {
+        
+    }
     
+    .beneficios .imagen-bit .bitcoin {
+       padding-top: 0%;
+    }
+    .beneficios .parrafos .parrafo-1 h1{
+        font-size: 36px;
+   
+    }
+    .beneficios .parrafos .parrafo-1 h3{
+      font-size: 18px;
+        }
+    .beneficios .parrafos .parrafo-2 h1{
+    font-size: 36px;
+    }
+    .beneficios .parrafos .parrafo-2 h3{
+       font-size: 18px;
+        }
+    .beneficios .parrafos .parrafo-2{
+           
+    }}
+@media (min-width: 1500px){
+
+    .beneficios .imagen-bit  {
+        
+    }
+    
+    .beneficios .imagen-bit .bitcoin {
+       
+    }
+    .beneficios .parrafos .parrafo-1 h1{
+        font-size: 60px;
+   
+    }
+    .beneficios .parrafos .parrafo-1 h3{
+      font-size: 26px;
+        }
+    .beneficios .parrafos .parrafo-2 h1{
+    font-size: 60px;
+    }
+    .beneficios .parrafos .parrafo-2 h3{
+       font-size: 26px;
+        }
+    .beneficios .parrafos .parrafo-2{
+           
+    }
+
+}
