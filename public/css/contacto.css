@@ -1,7 +1,50 @@
-.contacto img{
+.contacto section img{
     width: 100%;
     padding-top: 10%;
 }
 .contacto{
     background-color: black;
+}
+.contacto .conexion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contacto .conexion .qr{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+.contacto .conexion .redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+.contacto .conexion .redes .instagram , .telegram , .email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contacto .conexion .redes div .texto-telegram , .texto-instagram , .texto-email{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto .conexion h1,h2,h3,h4, i{
+    color: white;
+}
+
+.contacto section img{
+    width: 100%;
+    padding-top: 10%;
+}
+.contacto .conexion  i{
+    color: white;
+    font-size: 46px;
+}
+
+.conexion .qr .imagen-qr {
+    width: 50%;
 }

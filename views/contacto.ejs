@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',{title: 'Contacto'}) %> 
-<body>
-    <%- include('./partials/header') %>
-<main class="contacto">
-    <img src="/images/contacto-1.jpg" alt="">
-    <img src="/images/contacto-2.jpg" alt="">
-</main>
-</body>
+<%- include('./partials/head',{title: 'Contacto' }) %>
+
+    <body>
+        <%- include('./partials/header') %>
+            <main class="contacto">
+
+                <section class="formulario">
+                    <img src="/images/contacto-1.jpg" alt="">
+                </section>
+                <section class="conexion">
+                    <article class="qr">
+                        <h1>Seguinos en <br> nuestras redes</h1>
+                        <h3> y sumate a los grupos de la comunidad <br> para mantenerte al día con lo ultimo en <br>
+                            información y poder participar de sorteos <br> y beneficios exclusivos</h3>
+                        <img class="imagen-qr"  src="/images/qr.jpg" alt="">
+                        <h2>Linktree</h2>
+                    </article>
+                    <article class="redes">
+                        <div class="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <div class="texto-instagram">
+                                <h2>Atomic.lat</h2>
+                                <h4>Mantenete al día con nuestras historias diarias <br> que  brindan información de alto <br> valor del mundo defi.</h4>
+                            </div>
+                        </div>
+                        <div class="telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                            <div class="texto-telegram">
+                                <h2>ATOMIC</h2>
+                                <h4>Sé parte de nuestra comunidad y encuentra <br> gente con  mismos intereses para
+                                    relacionarte.</h4>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <i class="fas fa-envelope"></i>
+                            <div class="texto-email">
+                                <h2>Info@atomic.lat</h2>
+                                <h4>Para información especifica envianos un mail <br> con un tiempo de respuestra
+                                    express</h4>
+                            </div>
+                        </div>
+
+                    </article>
+                </section>
+            </main>
+    </body>
+
 </html>
