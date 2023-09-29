@@ -1,7 +1,4 @@
-.contacto section img{
-    width: 100%;
-    padding-top: 10%;
-}
+
 .contacto{
     background-color: black;
 }
@@ -16,6 +13,24 @@
     width: 40%;
     align-items: center;
 }
+
+.contacto .conexion .qr .texto-qr h1{
+    font-size: 40px;
+    margin: 0% 0% 3% 0%;
+}
+
+.contacto .conexion .qr .linktree{
+    color: #e3e398;
+    margin: 2%;
+}
+
+
+
+.contacto .conexion .qr .texto-qr h3{
+    font-size: 14px;
+    color: #e3e398;
+}
+
 .contacto .conexion .redes{
     display: flex;
     flex-direction: column;
@@ -47,4 +62,10 @@
 
 .conexion .qr .imagen-qr {
     width: 50%;
+    padding-top: 20%;
+}
+
+.contacto .conexion .redes h2{
+    color: #e3e398;
+    margin-bottom: 2%;
 }
