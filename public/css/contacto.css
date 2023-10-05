@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Roboto:wght@500&display=swap');
+
+
 
 .contacto{
     background-color: black;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .contacto .conexion{
     display: flex;
@@ -17,10 +22,11 @@
 .contacto .conexion .qr .texto-qr h1{
     font-size: 40px;
     margin: 0% 0% 3% 0%;
+    
 }
 
 .contacto .conexion .qr .linktree{
-    color: #e3e398;
+    color: #ffde59;
     margin: 2%;
 }
 
@@ -28,23 +34,25 @@
 
 .contacto .conexion .qr .texto-qr h3{
     font-size: 14px;
-    color: #e3e398;
+    color: #ffde59;
 }
 
 .contacto .conexion .redes{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 40%;
+    width: 42%;
 }
 .contacto .conexion .redes .instagram , .telegram , .email{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    width: 100%;
+    background-color: black;
 }
 .contacto .conexion .redes div .texto-telegram , .texto-instagram , .texto-email{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .contacto .conexion h1,h2,h3,h4, i{
@@ -57,7 +65,8 @@
 }
 .contacto .conexion  i{
     color: white;
-    font-size: 46px;
+    font-size: 66px;
+    padding-right: 2%;
 }
 
 .conexion .qr .imagen-qr {
@@ -66,6 +75,57 @@
 }
 
 .contacto .conexion .redes h2{
-    color: #e3e398;
+    color: #ffde59;
     margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.contacto .conexion .redes .email:hover{
+    position: relative;
+    transform: scale(1.5);
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.contacto .conexion .redes .telegram:hover{
+    position: relative;
+    transform: scale(1.5);
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.contacto .conexion .redes .instagram:hover{
+    position: relative;
+    transform: scale(1.5);
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+@media (min-width: 1200px){
+    .contacto .conexion .qr .texto-qr h3{
+        font-size: 22px;
+    }
+    .contacto .conexion .qr .texto-qr h1{
+        font-size: 60px;
+    }
+    .conexion .qr .imagen-qr{
+        width: 52%;
+    }
+    .contacto .conexion .qr .linktree {
+        font-size: 22px;
+    }
+    .contacto .conexion .redes h2{
+        font-size: 50px;
+    }
+    .contacto .conexion h4{
+        font-size: 20px;
+    }
+    .contacto .conexion i{
+        font-size: 140px;
+    }
 }
