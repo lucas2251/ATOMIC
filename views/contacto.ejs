@@ -13,37 +13,55 @@
                     </article>
                     <article class="articulo-formulario">
                       
-                    <form action="https://formsubmit.co/cordobalucas225@gmail.com" method="POST" class="formulario-form">
+                    <form action="https://formsubmit.co/cordobalucas225@gmail.com" id="formulario" method="POST" class="formulario-form">
                         <div>
-                            <input type="text" placeholder="Nombre y Apellido" name="Nombre y apellido">
+                            <input type="text" placeholder="Nombre y Apellido" id="nombre" name="Nombre y apellido">
+                            <p class="error" id="nombrerror">
+                                <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
+                            </p>
                         </div>
                         <div class="edad-localidad">
                             <div>
-                                <input type="number" class="edad" placeholder="Edad" name="Edad">
+                                <input type="number" class="edad" placeholder="Edad" id="edad" name="Edad">
+                                <p class="error" id="edaderror">
+                                    <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
+                                </p>
                             </div>
                             <div>
-                                <input type="text" class="localidad" placeholder="Localidad" name="Localidad">
+                                <input type="text" class="localidad" placeholder="Localidad" id="localidad" name="Localidad">
+                                <p class="error" id="localidaderror">
+                                    <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
+                                </p>
                             </div>
                         </div>
                         <div>
-                            <input type="email" placeholder="Escribe tu e-mail" name="Email">
+                            <input type="email" placeholder="Escribe tu e-mail" id="email" name="Email">
+                            <p class="error" id="emailerror">
+                                <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
+                            </p>
                         </div>
                         <div>
-                            <input type="number" placeholder="Teléfono" name="Telefono">
+                            <input type="number" placeholder="Teléfono" id="telefono" name="Telefono">
+                            <p class="error" id="telefonoerror">
+                                <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
+                            </p>
                         </div>
                         <div>
-                            <textarea  id="" cols="30" rows="10" placeholder="Deja tu mensaje (Si deseas ser contactado en un horario en especifico por favor déjalo aclarado)" name="mensaje"></textarea>
+                            <textarea  id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje (Si deseas ser contactado en un horario en especifico por favor déjalo aclarado)" name="mensaje"></textarea>
+                            <p class="error" id="mensajeerror">
+                                <%= locals.errors && errors.titulo ? errors.titulo.msg : null %>
+                            </p>
                         </div>
                         
                         <div class="div-boton">
-                            <div class="boton-wallet"><button class="botona" type="submit" value="ENVIAR MENSAJE">Enviar mensaje </button></div>
+                            <div class="boton-wallet"><button  disabled  class="botona" id="btn" type="submit" value="ENVIAR MENSAJE">Enviar mensaje  </button></div>
                         </div>
                         <input type="hidden" name="_next" value="http://localhost:4080/">
                         <input type="hidden" name="_captcha" value="false">
                     
 
 
-
+      
                     </form>
                 </article>
                 </section>
@@ -92,6 +110,7 @@
                     </article>
                 </section>
             </main>
+            <script src="/javascript/validacionProductos.js"></script>
     </body>
 
 </html>

@@ -114,6 +114,12 @@ margin: 4%;
     margin-bottom: 10%;
 }
 
+.contacto .formulario .formulario-form #nombrerror, #edaderror, #localidaderror, #emailerror,#telefonoerror, #mensajeerror {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    text-shadow: 1px 1px red;
+}
 
 
 
