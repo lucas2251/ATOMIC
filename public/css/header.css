@@ -107,9 +107,50 @@ header .content-header .icons li{
 
 
 header .content-header .nav-desktop{
+    display: flex;
+}
+header .abrir-menu{
     display: none;
 }
 
+
+@media(max-width:769px){
+    header .content-header {
+        width: 100%;
+    }
+
+    header .content-header .nav-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        
+    }
+    header .content-header .nav-desktop ul{
+       /* display: none; */
+    }
+    header .content-header .boton-wallet{
+        display: none;
+    }
+    header .content-header .logo {
+        width: 150px;
+        height: 70px;
+    }
+    header .content-header{
+        display: flex;
+        flex-direction: row-reverse ;
+        flex-wrap: nowrap;
+    }
+   /* header .abrir-menu{
+        display: block;
+        width: 10%;
+    }*/
+    header .content-header .nav-desktop {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
 
 
 

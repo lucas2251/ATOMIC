@@ -19,7 +19,7 @@ let vinculacion = "Documento vinculado con exito"
 
     new Glider(document.querySelector('.glider'), {
       slidesToShow: 1,
-      dots: '#dots',
+      dots: '.carousel__indicadores',
       draggable: true,
       arrows: {
         prev: '.glider-prev',
@@ -582,6 +582,7 @@ let vinculacion = "Documento vinculado con exito"
         eventHandler(k, args[k])
       })
     }
+
   
     return Glider
   })
