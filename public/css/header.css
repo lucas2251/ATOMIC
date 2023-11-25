@@ -109,9 +109,7 @@ header .content-header .icons li{
 header .content-header .nav-desktop{
     display: flex;
 }
-header .abrir-menu{
-    display: none;
-}
+
 
 
 @media(max-width:769px){
@@ -123,11 +121,23 @@ header .abrir-menu{
         display: flex;
         flex-direction: column;
         width: 100%;
-        
+        position: absolute;
+    top: 0;
+    left: 0;
+        background-color: black;
+        height: 500px;
         
     }
     header .content-header .nav-desktop ul{
-       /* display: none; */
+        font-size: 30px;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .content-header .nav-desktop ul li{
+        padding: 10%;
     }
     header .content-header .boton-wallet{
         display: none;
@@ -141,20 +151,66 @@ header .abrir-menu{
         flex-direction: row-reverse ;
         flex-wrap: nowrap;
     }
-   /* header .abrir-menu{
+
+
+
+   header .cerrar-menu{
+    width: 52px;
+    height: 50px;
+    background: black;
+    border: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    }
+    header .cerrar-menu i{
+        font-size: 48px;
+    }
+
+    header .abrir-menu{
         display: block;
-        width: 10%;
-    }*/
+        width: 18%;
+        height: 64px;
+        background: black;
+        border: 0;
+    }
+    header .abrir-menu i{
+        font-size: 35px;
+    }
+    
+    
+
+
     header .content-header .nav-desktop {
         display: flex;
         flex-direction: column;
         width: 50%;
+        box-shadow: 0 0 0 100vmax rgb(0 0 0 / 50%);
+        opacity: 0;
+        visibility:hidden;
+        border-right: 2px solid #ffde59;
+    border-bottom: 2px solid #ffde59;
     }
+    header .content-header .nav-desktop.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    header .content-header .nav-desktop.visible ul li:hover{
+        background-color: #ffde59;
+    }
+    header .content-header .nav-desktop.visible ul li:hover a{
+        color:black
+    }
+
+   
 }
 
 
 
 @media(min-width:769px){
+    header .abrir-menu , .cerrar-menu{
+        display: none;
+    }
     header .content-header{
         flex-wrap: wrap;
         width: 95%;
@@ -185,7 +241,7 @@ header .abrir-menu{
         font-size: 14px;
     }
     header .content-header .nav-desktop ul li:hover{
-        background-color: yellow;
+        background-color: #ffde59;
     }
     header .content-header .nav-desktop ul li:hover a{
         color:black
