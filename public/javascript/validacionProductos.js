@@ -145,11 +145,7 @@ window.addEventListener('load', () => {
                 this.style.border='2px solid red' ;
                 validate.telefono = false
                 break;
-                case
-                    !regExNumber.test(this.value):
-                      $('#telefonoerror').innerHTML = "Solo se permiten numeros"
-                      telefono.style.border = "3px solid red"
-                      break
+                    
                
             default:
                 $('#telefonoerror').innerHTML = null
@@ -196,13 +192,4 @@ window.addEventListener('load', () => {
 
 
 
-    form.addEventListener('submit',(e) => {
-        
-        console.log(form.elements);
-        if(validate.length > 0){
-            e.preventDefault();
-         }else{
-            form.submit()
-        } 
-    })
 })
