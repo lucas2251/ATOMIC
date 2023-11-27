@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',{title: 'planes'}) %> 
+<%- include('./partials/head',{title: 'planes' }) %>
     <link rel="stylesheet" href="/css/styles.css">
-<body>
-    <%- include('./partials/header') %>
-    <main class="planes">
-       
-<section class="section-planes">
-    <h1>Planes</h1>
-    <h3>Selecciona el plan que mas se adapte a ti, en todos aprenderás las mismas <br> herramientas, sin embargo no todos poseén los mismos beneficios.</h3>
-</section>
-<section class="section-casillas">
-    <div class="casilla-1">
-        <h2>Lite</h2>
-        <ul>
-            <li class="gris">Clases en vivo online</li>
-        </ul>
-    </div>
-    <div class="casilla-2">
-        <h2>Clasico</h2>
-        <ul>
-            <li class="gris">Clases en vivo online</li>
-            <li class="amarillo">Clases de tutoriales semanales</li>
-            <li class="amarillo">Grupo soporte 24hrs</li>
-            <li class="amarillo">Participación de Sorteos <br> exclusivos de alumnos.</li>
-        </ul>
-    </div>
-    <div class="casilla-3">
-        
-        <ul>
-            <img src="/images/ATOMIC-1.jpg" class="imagen-atomic" alt="">
-            <li class="gris">Clases en vivo online</li>
-            <li class="gris">Clases de tutoriales semanales</li>
-            <li class="gris">Grupo soporte 24hrs</li>
-            <li class="amarillo">Participación de sorteos <br> premium</li>
-            <li class="amarillo">Mentorias individuales privadas</li>
-            <li class="amarillo">Grupo vip de asesores</li>
-            <li class="amarillo">Posibilidad de sumarte al staff</li>
-        </ul>
-    </div>
-</section>
-<section class="section-comunicate">
-    <h3>Comunícate desde la opcion de <a href="/contacto">contacto</a> si deseas adquirir un plan o si quieres mas <br> información de los mismos.</h3>
-</section>
-        
-        
-    </main>
-    
-</body>
+
+    <body>
+        <%- include('./partials/header') %>
+            <main class="planes">
+
+                <section class="section-planes">
+                    <h1>Planes</h1>
+                    <h3>Selecciona el plan que mas se adapte a ti, en todos aprenderás las mismas <br> herramientas, sin
+                        embargo no todos poseén los mismos beneficios.</h3>
+                </section>
+                <section class="section-casillas">
+                    <div class="casilla-1">
+                        <h2>Lite</h2>
+                        <ul>
+                            <li class="gris">Clases en vivo online</li>
+                        </ul>
+                    </div>
+                    <div class="casilla-2">
+                        <h2>Clasico</h2>
+                        <ul class="pc-2">
+                            <li class="gris">Clases en vivo online</li>
+                            <li class="amarillo">Clases de tutoriales semanales</li>
+                            <li class="amarillo">Grupo soporte 24hrs</li>
+                            <li class="amarillo">Participación de Sorteos <br> exclusivos de alumnos.</li>
+                        </ul>
+                        <ul class="mobil-2">
+                            <div>
+                                <li class="gris">Clases en vivo online</li>
+                                <li class="amarillo">Clases de tutoriales semanales</li>
+                            </div>
+                            <div>
+                                <li class="amarillo">Grupo soporte 24hrs</li>
+                                <li class="amarillo">Participación de Sorteos <br> exclusivos de alumnos.</li>
+                            </div>
+
+                        </ul>
+                    </div>
+                    <div class="casilla-3">
+
+                        <ul class="pc-3">
+                            <img src="/images/ATOMIC-1.jpg" class="imagen-atomic" alt="">
+                            <li class="gris">Clases en vivo online</li>
+                            <li class="gris">Clases de tutoriales semanales</li>
+                            <li class="gris">Grupo soporte 24hrs</li>
+                            <li class="amarillo">Participación de sorteos <br> premium</li>
+                            <li class="amarillo">Mentorias individuales privadas</li>
+                            <li class="amarillo">Grupo vip de asesores</li>
+                            <li class="amarillo">Posibilidad de sumarte al staff</li>
+                        </ul>
+                        <ul class="mobil-3">
+                            <img src="/images/ATOMIC-1.jpg" class="imagen-atomic" alt="">
+                            <div>
+                                <div>
+                                    <li class="gris">Clases en vivo online</li>
+                                    <li class="gris">Clases de tutoriales semanales</li>
+                                    <li class="gris">Grupo soporte 24hrs</li>
+                                    <li class="amarillo">Participación de sorteos <br> premium</li>
+                                </div>
+                                <div>
+                                    <li class="amarillo">Mentorias individuales privadas</li>
+                                    <li class="amarillo">Grupo vip de asesores</li>
+                                    <li class="amarillo">Posibilidad de sumarte al staff</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section-comunicate">
+                    <h3>Comunícate desde la opcion de <a href="/contacto">contacto</a> si deseas adquirir un plan o si
+                        quieres mas <br> información de los mismos.</h3>
+                </section>
+
+
+            </main>
+
+    </body>
+
 </html>

@@ -207,7 +207,7 @@ header .content-header .nav-desktop{
 
 
 
-@media(min-width:769px){
+@media(min-width:770px){
     header .abrir-menu , .cerrar-menu{
         display: none;
     }

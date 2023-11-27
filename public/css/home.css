@@ -89,6 +89,7 @@ background-position-x: 100%;
 }
 .home main .section-2 .estrategias .h1-estrategias{
     text-shadow: 1px 2px black;
+    font-size: 25px;
 }
 .h1-estrategias{
     text-shadow: 1px 2px black;
@@ -97,6 +98,10 @@ background-position-x: 100%;
 .home main .section-2 div h4{
     text-shadow: 1px 2px black;
     text-align: center;
+    font-size: 12px;
+}
+.home main .section-3{
+  margin-bottom: 10%;
 }
 
 
@@ -106,8 +111,61 @@ background-position-x: 100%;
 
 /* Tablet */
 
-@media (min-width: 426px){
-
+@media(max-width:769px){
+  .home main{
+    padding-top: 15%;
+  }
+  .home main .section-1{
+    padding-left: 0;
+    align-items: center;
+    background: #0000002e;
+  }
+  .home main .section-1 h2{
+    font-size: 17px;
+    text-shadow: 2px 2px 2px black;
+  }
+  .home main .section-1 h1{
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+  }
+  .home main .section-1 h3{
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+  }
+  .home main .section-1 .boton-parte{
+    margin-top: 5%;
+  }
+  .home main .section-2 {
+    flex-direction: column;
+    padding-top: 15%;
+    padding-bottom: 17%;
+    align-items: center;
+}
+.home main .section-2 .estrategias{
+  padding-bottom: 3%;
+  border: 1px solid #ffde59;
+    width: 90%;
+    margin: 2%;
+    border-radius: 22px;
+    box-shadow: 1px 1px 3px white;
+}
+.home main .section-2 .estrategias .h1-estrategias {
+  text-shadow: 1px 2px black;
+  font-size: 28px;
+}
+.home main .section-2 div h4 {
+  text-shadow: 1px 2px black;
+  text-align: center;
+  font-size: 15px;
+  color: #d7d7d7f2;
+}
+.glider.draggable .glider-slide img{
+  height: 230px;
+}
+.home main .section-3{
+  margin-bottom: 10%;
+}
 }
 
 /* Desktop */
