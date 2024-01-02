@@ -1,36 +1,47 @@
 window.addEventListener('load', () => {
 
     
-    let forms = document.querySelectorAll('#formula');
-    for (let i = 0; i < forms.length; i++) {
-        forms[i].addEventListener('submit', event => {
+    
+    document.querySelector('#formula').addEventListener('click', event => {
                 event.preventDefault();
                 Swal.fire({
                 customClass: {
-                    confirmButton: 'swalBtnColor',
-                    cancelButton: 'swalBtnColor'
+                   
                 },
-
-                title: '¿Estas seguro que quieres eliminar el producto?',
-                text: "Esta accion es irreversible!",
-                color:'white',
-                icon: 'warning',
-                background: "#271177",
-                showCancelButton: true,
-                confirmButtonColor: '#7ff77f',
-                cancelButtonColor: '#cc4141',
-                confirmButtonText: 'Eliminar',
+                 imageUrl:"/images/ATOMIC.jpg" ,
+                title: "Envianos tu número y un asesor se contactará contigo info@atomic.lat",
+                color: 'white',
+                background: "black",
                 showClass: {
                     popup: 'animate__animated animate__fadeInDown'
                 },
 
-                }).then((result) => {
+            }).then((result) => {
 
-                    if (result.isConfirmed) {
-                        forms[i].submit();
-                    }
+                    
 
                 })
-        })
-    }
-})
+        }),
+        document.querySelector('#formula2').addEventListener('click', event => {
+            event.preventDefault();
+            Swal.fire({
+            customClass: {
+               
+            },
+
+            imageUrl:"/images/ATOMIC.jpg" ,
+                title: "Envianos tu número y un asesor se contactará contigo info@atomic.lat",
+            color: 'white',
+            background: "black",
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+
+        }).then((result) => {
+
+                
+
+            })
+    })}
+    
+)

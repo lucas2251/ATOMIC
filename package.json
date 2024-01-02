@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon --ext js,html --ignore public",
-    "start":"node app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,9 @@
     "liveserver": "^0.1.20",
     "method-override": "^3.0.0",
     "multer": "^1.4.5-lts.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.10.1"
   },
   "description": ""
 }
