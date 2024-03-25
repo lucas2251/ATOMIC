@@ -1,17 +1,10 @@
-let productos = require('../data/productos.json')
+
 
 
 module.exports = {
     inicio: (req,res) => {
-        let indexProductos = productos.filter(producto => {
-            
-           return  producto.id <=4
-        })
-        let indexProductos2 = productos.filter(producto => {
-            
-            return producto.id > 4 && producto.id<=8
-         })
-        return res.render('inicio',{productos,indexProductos,indexProductos2})
+       
+        return res.render('inicio')
     },
     beneficios: (req,res) => {
         return res.render('beneficios')
