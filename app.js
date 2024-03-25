@@ -12,9 +12,7 @@ const port = 4080;
 
 app.use(express.static(path.resolve(__dirname,'public')));
 
-/*metodos http*/
-app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+
 
 
 /* Requerir las rutas */
@@ -23,7 +21,7 @@ const indexRouter = require('./routes/index')
 
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+
 app.set('view engine', 'ejs');
 
 /* Middlewares */
